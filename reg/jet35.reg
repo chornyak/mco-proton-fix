@@ -1,0 +1,32 @@
+REGEDIT4
+
+; Microsoft Jet 3.5 engine registration (what the DAO 3.5 redistributable writes).
+; Must be imported with the 32-bit regedit (C:\windows\syswow64\regedit.exe) so it
+; lands in the WOW64 view that the 32-bit game reads.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines]
+"SystemDB"="C:\\windows\\system32\\system.mdw"
+"CompactByPassWord"=dword:00000001
+"PrevFormatCompactWithUNICODECompression"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Jet\3.5\Engines\Jet 3.5]
+@="C:\\windows\\system32\\msjet35.dll"
+"FlushTransactionTimeout"=dword:000001f4
+"LockDelay"=dword:00000064
+"LockRetry"=dword:00000014
+"MaxBufferSize"=dword:00000000
+"MaxLocksPerFile"=dword:00002328
+"Threads"=dword:00000003
+"UserCommitSync"="Yes"
+"ImplicitCommitSync"="No"
+"ExclusiveAsyncDelay"=dword:000007d0
+"SharedAsyncDelay"=dword:00000000
+"PageTimeout"=dword:00001388
+"RecycleLVs"=dword:00000000
+
+; Design-time license keys for the DAO DBEngine class (DAO 3.5 and DAO 3.x).
+[HKEY_CLASSES_ROOT\Licenses\F4FC596D-DFFE-11CF-9551-00AA00A3DC45]
+@="mbmabptebkjcdlgtjmskjwtsdhjbmkmwtrak"
+
+[HKEY_CLASSES_ROOT\Licenses\00000010-0000-0010-8000-00AA006D2EA4]
+@="mbmabptebkjcdlgtjmskjwtsdhjbmkmwtrak"
