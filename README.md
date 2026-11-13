@@ -42,7 +42,7 @@ winetricks uses) and checked before use.
 2. Run:
 
    ```sh
-   git clone <this repo> && cd mco-proton-fix
+   git clone https://github.com/chornyak/mco-proton-fix.git && cd mco-proton-fix
    ./install.sh --verify
    ```
 
